@@ -4,6 +4,7 @@ import { useAuth } from '../context/AuthContext'
 import { useIncidents } from '../hooks/useIncidents'
 import { useUserCollection } from '../hooks/useUserCollection'
 import { cardClass, btnPrimary, btnSecondary, errorClass, severityStyles } from '../ui'
+import EmergencyServices from '../components/EmergencyServices'
 
 export default function Dashboard() {
   const { user } = useAuth()
@@ -46,6 +47,10 @@ export default function Dashboard() {
         </p>
       )}
 
+      <section className="space-y-2">
+        <h3 className="text-lg font-semibold">Quick call</h3>
+        <EmergencyServices compact />
+      </section>
       {/* Stats: 2 columns on phones, 4 from tablet up */}
       <ul className="grid grid-cols-2 gap-4 md:grid-cols-4">
         {stats.map(({ label, value, icon: Icon }) => (

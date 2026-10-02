@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Police Emergency",
+    "short": "Police",
+    "number": "119",
+    "description": "Crimes, road accidents and immediate danger."
+  },
+  {
+    "name": "Suwa Seriya Ambulance",
+    "short": "Ambulance",
+    "number": "1990",
+    "description": "Free 24/7 emergency ambulance service."
+  },
+  {
+    "name": "Fire & Rescue",
+    "short": "Fire",
+    "number": "110",
+    "description": "Fires, gas leaks and rescue situations."
+  },
+  {
+    "name": "Disaster Management Centre",
+    "short": "Disasters",
+    "number": "117",
+    "description": "Floods, landslides and other natural disasters."
+  }
+]
