@@ -1,0 +1,8 @@
+{
+  "types": ["Fire", "Medical", "Road accident", "Crime", "Flood", "Power outage", "Other"],
+  "severities": [
+    { "value": "low", "label": "Low" },
+    { "value": "medium", "label": "Medium" },
+    { "value": "high", "label": "High" }
+  ]
+}

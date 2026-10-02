@@ -1,0 +1,53 @@
+@import "tailwindcss";
+
+/* CivicPulse design tokens (light mode by default) */
+@theme {
+  --font-sans: "Inter Variable", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, monospace;
+
+  --color-page: #f5f6f8;
+  --color-card: #ffffff;
+  --color-raised: #eef0f3;
+  --color-line: #d9dde3;
+  --color-line-strong: #b8c0ca;
+  --color-ink: #14161a;
+  --color-ink-2: #4a5361;
+  --color-ink-3: #5f6b7a;
+  --color-focus: #3f6fa8;
+  --color-danger: #b4412f;
+
+  --color-primary: #e86f5c;
+  --color-primary-hover: #ee8573;
+  --color-on-primary: #14161a;
+
+  --color-sev-high: #e86f5c;
+  --color-sev-medium: #d9a441;
+  --color-sev-low: #8d97a5;
+  --color-ok: #5fae83;
+}
+
+/* Dark mode: original CivicPulse Figma palette, applied when the device prefers dark */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-page: #12161b;
+    --color-card: #1a2027;
+    --color-raised: #202832;
+    --color-line: #2a323c;
+    --color-line-strong: #3a4552;
+    --color-ink: #e7eaee;
+    --color-ink-2: #8d97a5;
+    --color-ink-3: #8690a0;
+    --color-focus: #6c9bd1;
+    --color-danger: #ee8573;
+  }
+}
+
+@layer base {
+  :root {
+    color-scheme: light dark;
+  }
+  body {
+    background-color: var(--color-page);
+    color: var(--color-ink);
+  }
+}
