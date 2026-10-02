@@ -19,7 +19,13 @@ export default function Layout() {
       <header className="border-b border-line bg-card">
         <div className="mx-auto flex max-w-6xl items-center justify-between p-4">
           <span className="flex items-center gap-2 text-xl font-semibold">
-            <span className="h-3 w-3 rounded-full bg-primary" aria-hidden="true" />
+            <img
+              src="/pwa-64x64.png"
+              alt=""
+              width="32"
+              height="32"
+              className="h-8 w-8 rounded-full"
+            />
             CivicPulse
           </span>
 

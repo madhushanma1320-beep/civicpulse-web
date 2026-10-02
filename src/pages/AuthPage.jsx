@@ -56,10 +56,16 @@ export default function AuthPage() {
   return (
     <main className="flex min-h-screen items-center justify-center bg-page p-4 text-ink">
       <div className="w-full max-w-sm rounded-2xl border border-line bg-card p-6 shadow-md">
-        <h1 className="flex items-center gap-2 text-2xl font-semibold">
-          <span className="h-3 w-3 rounded-full bg-primary" aria-hidden="true" />
+        <h1 className="flex items-center gap-3 text-2xl font-semibold">
+          <img
+            src="/pwa-64x64.png"
+            alt=""
+            width="40"
+            height="40"
+            className="h-10 w-10 rounded-full"
+          />
           CivicPulse
-        </h1>
+        </h1>        
         <p className="mt-1 text-sm text-ink-2">
           {isSignup ? 'Create your account' : 'Log in to your account'}
         </p>
